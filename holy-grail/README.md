@@ -1,4 +1,4 @@
-# Create a Holy Grail Layout using HTML, CSS, JS (optional)
+# Create a Holy Grail Layout using HTML, CSS
 
 ## Requirements
 
