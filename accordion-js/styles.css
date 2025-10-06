@@ -1,0 +1,21 @@
+.accordion {
+  border: 1px solid #cccc;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #0000;
+}
+
+.accordion-item:last-child {
+  border-bottom: transparent;
+}
+
+.accordion-item-header {
+  padding: 10px;
+  background-color: #ccc;
+}
+
+.accordion-item-content {
+  padding: 10px;
+  display: none;
+}
