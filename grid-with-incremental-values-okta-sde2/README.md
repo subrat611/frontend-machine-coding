@@ -1,16 +1,18 @@
-# React + Vite
+# Grid with incremental values
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Question
 
-Currently, two official plugins are available:
+Generate grid of size N with incremental values, whose value changes differently on click.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Accept an number `N` as input and generate a grid of `N * N` size.
+- The grid functions with following logic.
+  - On clicking an empty cell fill it with `max(existingNumbers) + 1`.
+  - On clicking a non-empty cell update it with `max(existingNumbers)`.
 
-## React Compiler
+### Expectations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Well-structured and modular React component(s)
+- Optimal state management (useState/useEffect, etc.)
+- Efficient computation of the maximum value
+- Clean UI and minimal re-rendering
+- Bonus for explanations and performance considerations
