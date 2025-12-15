@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player Component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player">
+      <video
+        src="video.mp4"
+        id="video"
+        poster="poster.png"
+        width="1000"
+      ></video>
+
+      <!-- controllers -->
+      <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play_pause">▶</button>
+        <button id="next">⏭</button>
+
+        <span id="current">00:00</span>
+
+        <input type="range" id="progress" value="0" />
+
+        <span id="duration">00:00</span>
+
+        <!-- <input type="range" id="volume" min="0" max="1" step="0.01" /> -->
+
+        <button id="fullscreen">⛶</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
