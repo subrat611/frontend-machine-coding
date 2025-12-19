@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid #ccc;
+  margin: 3px;
+  cursor: pointer;
+}
+
+.cell.red {
+  background-color: red;
+}
+
+.cell.yellow {
+  background-color: yellow;
+}
+
+.reset-game {
+  margin-top: 1rem;
+}
