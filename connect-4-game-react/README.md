@@ -1,3 +1,3 @@
 # Connect4
 
-<video src="./public/connect4-machine-coding.mp4"></video>
+<video src="connect4-machine-coding.mp4" width="320" controls></video>
