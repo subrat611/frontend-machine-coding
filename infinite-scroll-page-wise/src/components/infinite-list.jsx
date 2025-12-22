@@ -1,9 +1,11 @@
 import useInfinitePagination from "../hooks/use-infinite-pagination";
 
 const InfiniteList = ({ fetchFn, rederItem }) => {
-  const {} = useInfinitePagination({ fetchFn });
+  const { products, hasMore, loading, error } = useInfinitePagination({
+    fetchFn,
+  });
 
-  return <div>InfiniteList</div>;
+  return <div>{rederItem()}</div>;
 };
 
 export default InfiniteList;
