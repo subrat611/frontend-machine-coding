@@ -13,7 +13,7 @@ Design a reusable, scalable infinite pagination in React that can work across mu
 
 ## Architecture
 
-<img src="image.png" alt="pagination-arc" width="350" />
+<img src="image.png" alt="pagination-arc" width="500" />
 
 - Design pattern to use: `Custom Hook` + `Render Props`
 - The component `<InfiniteList />` takes two props
