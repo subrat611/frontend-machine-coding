@@ -32,6 +32,12 @@ The component should visually represent the progress of a task and handle dynami
 ## Follow-Up Questions (Interviewer May Ask)
 
 - How would you optimize this if progress updates every 100ms?
+
+  > If progress updates every 100ms, I avoid heavy React re-renders.
+  > First, I let CSS handle interpolation using transitions.
+  > For high-frequency or real-time updates, I decouple animation from React and use requestAnimationFrame with refs.
+  > I also prefer transform-based animations to avoid layout recalculations.
+
 - How would you expose this component as part of a design system?
 - How would you test this component?
 - How would you support server-driven progress?
