@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.progress-outer {
+  background-color: #ccc;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.progress-inner {
+  height: 20px;
+  border-radius: 20px;
+}
+
+.default {
+  background-color: green;
+}
