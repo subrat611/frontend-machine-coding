@@ -10,6 +10,12 @@ function App() {
       <br />
       <ProgressBar
         value={130}
+        max={20}
+        renderLabel={(percentage) => <span>Uploading... {percentage}%</span>}
+      />
+      <br />
+      <ProgressBar
+        value={30}
         max={120}
         renderLabel={(percentage) => <span>Uploading... {percentage}%</span>}
       />
