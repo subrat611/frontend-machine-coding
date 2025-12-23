@@ -35,3 +35,47 @@ The component should visually represent the progress of a task and handle dynami
 - How would you expose this component as part of a design system?
 - How would you test this component?
 - How would you support server-driven progress?
+
+## The first v1 component (commit 0) - Issues
+
+1. Percentage calculation is wrong
+
+```js
+width: `${value >= max ? max : value}%`;
+```
+
+This assumes: max = 100 always, value is already a percentage.
+
+```md
+value = 30
+max = 120
+// width becomes 30% (should be 25%)
+```
+
+2. Label uses raw value, not percentage
+
+```md
+renderLabel(value)
+
+But label says:
+Uploading... 30%
+
+That’s misleading if max !== 100.
+```
+
+3. No clamping for negative values
+
+`value = -20 → width = -20%` (This breaks layout.)
+
+4. Indeterminate state missing
+
+- What happens if progress is unknown?
+
+5. Accessibility not fully correct
+
+`aria-valuenow={value}`
+
+Should be:
+
+- Clamped value
+- Omitted in indeterminate mode
